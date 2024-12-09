@@ -16,3 +16,22 @@ services:
     ports:
       - "8080:8080"
 
+  micoserviciotrafico:
+    build: .
+    container_name: microserviciotrafico
+    ports:
+      - "8081:8081"
+
+  microserviciotransporte:
+    build: .
+    container_name: microserviciotransporte
+    ports:
+      - "8082:8082"
+
+  microservicioemergencias:
+    build: .
+    container_name: microservicioemergencias
+    ports:
+      - "8083:8083"
+
+
