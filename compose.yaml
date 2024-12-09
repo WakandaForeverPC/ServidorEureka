@@ -10,3 +10,9 @@ services:
       EUREKA_CLIENT_FETCH_REGISTRY: 'false'
       EUREKA_SERVER_ENABLE_SELF_PRESERVATION: 'false'
 
+  wakandacentral:
+    build: .
+    container_name: wakandacentral
+    ports:
+      - "8080:8080"
+
