@@ -34,4 +34,56 @@ services:
     ports:
       - "8083:8083"
 
+  microservicioenergia:
+    build: .
+    container_name: microservicioenergia
+    ports:
+      - "8084:8084"
 
+  microservicioagua:
+    build: .
+    container_name: microservicioagua
+    ports:
+      - "8085:8085"
+
+  microservicioresiduos:
+    build: .
+    container_name: microservicioresiduos
+    ports:
+      - "8086:8086"
+
+  microservicioseguridad:
+    build: .
+    container_name: microservicioseguridad
+    ports:
+      - "8087:8087"
+
+  microserviciosalud:
+    build: .
+    container_name: microserviciosalud
+    ports:
+      - "8088:8088"
+
+  microservicioeducacion:
+    build: .
+    container_name: microservicioeducacion
+    ports:
+      - "8089:8089"
+
+  microserviciogobernanza:
+    build: .
+    container_name: microserviciogobernanza
+    ports:
+      - "8090:8090"
+
+  microservicioconectividad:
+    build: .
+    container_name: microservicioconectividad
+    ports:
+      - "8091:8091"
+
+  microserviciocultura:
+    build: .
+    container_name: microserviciocultura
+    ports:
+      - "8092:8092"
