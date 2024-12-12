@@ -14,7 +14,10 @@ services:
     build: .
     container_name: wakandacentral
     ports:
-      - "8080:8080"
+      - "8093:8093"
+    environment:
+      SPRING_APPLICATION_NAME: microservicio-nombre
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://eureka-server:8761/eureka/
 
   micoserviciotrafico:
     build: .
